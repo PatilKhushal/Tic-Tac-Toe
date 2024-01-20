@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+.square
+{
+    @apply border relative justify-center items-center flex border-purple-500 p-8 w-2/6;
+}
+@tailwind utilities;
+
+.top-border-none
+{
+    @apply border-t-0;
+}
+
+.left-border-none
+{
+    @apply border-l-0;
+}
+
+.right-border-none
+{
+    @apply border-r-0;
+}
+
+.bottom-border-none
+{
+    @apply border-b-0;
+}
