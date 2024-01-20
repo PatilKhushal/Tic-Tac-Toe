@@ -2,8 +2,8 @@ let modal = document.querySelector('.modal');
 let playerName, highScore;
 let nameForm = document.querySelector('.nameForm');
 let gameBoardInside = document.querySelectorAll('.gameBoard div');
-let xSrc = 'assets/x-solid.svg';
-let oSrc = 'assets/o-solid.svg';
+let xSrc = 'images/x-solid.svg';
+let oSrc = 'images/o-solid.svg';
 
 // function to get player name from localStorage if present
 function getPlayerName()
@@ -234,15 +234,15 @@ function playSound(winner)
     switch (winner.toLowerCase()) 
     {
         case 'computer' : 
-                            let lost = './assets/lost.mp3';
+                            let lost = 'audios/lost.mp3';
                             new Audio(lost).play();
                             break;
         case 'tie' : 
-                            let tie = './assets/tie.mp3';
+                            let tie = 'audios/tie.mp3';
                             new Audio(tie).play();
                             break;
         default :
-                            let win = './assets/win.mp3';
+                            let win = 'audios/win.mp3';
                             new Audio(win).play();
     }
 }
@@ -280,7 +280,7 @@ function resetGame(winner)
     displayWinnerModal.classList.toggle('hidden');
     setTimeout(() => {
         displayWinnerModal.classList.toggle('hidden');
-    }, 2000);
+    }, 3000);
 }
 
 // function to set Score
